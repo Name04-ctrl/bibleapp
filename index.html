@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bible</title>
+<link rel="stylesheet" href="css/index3.css">
+</head>
+<body>
+<div id="mainContainer" class="container">
+<div id="header">
+<button type="button" id="fullScreen" class="headerButton">Fullscreen</button>
+<button type="button" id="refresh" class="headerButton">Refresh</button>
+</div>
+<div id="firstContainer" class="container">
+<div id="wordAAC"></div>
+<div id="buttonContainer">
+<ul class="todos"></ul>
+<button type="button" id="previousChapter" class="navButton buttonBorder fontFamily buttonPadding largeSize pink"><</button>
+<button type="button" id="nextChapter" class="navButton buttonBorder fontFamily buttonPadding largeSize pink">></button>
+<button type="button" id="goStart" class="navButton middle buttonBorder fontFamily buttonPadding">1</button>
+<div id="bookName" class="bold">Matthew</div>
+<input type="text" id="add">
+<br>
+<button id="save">Save</button>
+
+<div class="booksDiv">
+<div onclick="openMatthew()">Matthew</div>
+<div onclick="openMark()">Mark</div>
+<div onclick="openLuke()">Luke</div>
+<div onclick="openJohn()">John</div>
+<div onclick="openProverbs()">Proverbs</div>
+<div onclick="openRomans()">Romans</div>
+<div onclick="openGenesis()">Genesis</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="fullScreen.js">
+</script>
+<script type="text/javascript" src="json/matthew.json">
+</script>
+<script type="text/javascript" src="json/mark.json">
+</script>
+<script type="text/javascript" src="json/luke.json">
+</script>
+<script type="text/javascript" src="json/john.json">
+</script>
+<script type="text/javascript" src="json/romans.json">
+</script>
+<script type="text/javascript" src="json/old/proverbs.json">
+</script>
+<script type="text/javascript" src="json/old/genesis.json">
+</script>
+<script type="text/javascript" src="appFunctions.js">
+</script>
+<script src="./db.js" defer></script>
+</body>
+</html>
